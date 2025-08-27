@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuvamitra | Arts & Sports Club</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .hero-gradient {
+      background: linear-gradient(to bottom right, #e0f2fe, #f0f9ff);
+    }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .floating-whatsapp svg {
+      width: 30px;
+      height: 30px;
+      fill: white;
+    }
+    .hero-image {
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+  <!-- Navbar -->
+  <header class="sticky top-0 bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
+      <div class="flex items-center gap-2">
+        <img src="logo.png" alt="Yuvamitra Logo" class="h-12 w-auto">
+        <span class="font-bold text-xl text-blue-800">YUVAMITRA ARTS & SPORTS CLUB PANAMANNA</span>
+      </div>
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#programs" class="hover:text-blue-600">Programs</a>
+        <a href="#impact" class="hover:text-blue-600">Impact</a>
+        <a href="#events" class="hover:text-blue-600">Events</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <a href="https://chat.whatsapp.com/CgYvZYO9jAQDEcaXL65UPO?text=Hello%20Yuvamitra%2C%20I%20would%20like%20to%20know%20more." class="hidden md:inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Chat on WhatsApp</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-gradient py-16">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-4">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">Empowering the Next Generation in <span class="text-blue-700">Panamanna</span></h1>
+        <p class="mt-4 text-gray-700 text-lg">Yuvamitra is a community-driven club nurturing skills, values and opportunities for youth through education, sports, technology and social service.</p>
+        <div class="mt-6 flex flex-wrap gap-4">
+          <a href="#programs" class="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-black">Explore Programs →</a>
+          <a href="https://chat.whatsapp.com/CgYvZYO9jAQDEcaXL65UPO?text=Hello%20Yuvamitra%2C%20I%20would%20like%20to%20know%20more." class="border border-gray-300 px-6 py-3 rounded-lg hover:border-gray-400">Join on WhatsApp</a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <img id="dynamic-image" src="images/img1.jpg" alt="Youth community" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- About, Programs, Contact sections remain same -->
+
+  <!-- Floating WhatsApp -->
+  <a href="https://chat.whatsapp.com/CgYvZYO9jAQDEcaXL65UPO?text=Hello%20Yuvamitra%2C%20I%20would%20like%20to%20know%20more." class="floating-whatsapp" target="_blank" rel="noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 .6C7.5.6.5 7.6.5 16c0 2.8.8 5.5 2.2 7.8L.6 31.4l7.8-2.1c2.3 1.4 5 2.2 7.8 2.2 8.4 0 15.4-7 15.4-15.4C31.4 7.6 24.4.6 16 .6zm8.8 22.1c-.4 1.2-2.2 2.1-3.1 2.2-.8.1-1.8.2-2.9-.2-.7-.2-1.6-.5-2.7-1.1-4.8-2.7-7.9-6.5-8.1-8.9-.1-2.4 1.3-3.6 1.8-4 .5-.4 1.1-.5 1.5-.5h1c.3 0 .8-.1 1.2.9.4 1 .9 2.4 1 2.5.1.2.1.4 0 .6-.1.2-.2.4-.3.5-.1.1-.2.3-.4.5-.1.2-.3.4-.1.8.1.4.6 1.3 1.3 2 .9 1 1.7 1.3 2 .1.3-.1.5-.1.7-.1s.5.1.8.6c.3.5 1.1 1.8 1.3 2.1.1.3.1.6 0 .8z"/></svg>
+  </a>
+
+  <script>
+    const images = ["images/img1.jpg", "images/img2.jpg", "images/img3.jpg", "images/img4.jpg", "images/img5.jpg", "images/img6.jpg", "images/img7.jpg", "images/img8.jpg", "images/img9.jpg", "images/img10.jpg", "images/img11.jpg", "images/img12.jpg", "images/img13.jpg", "images/img14.jpg", "images/img15.jpg", "images/img16.jpg", "images/img17.jpg", "images/img18.jpg", "images/img19.jpg"];
+    let index = 0;
+    const imgElement = document.getElementById("dynamic-image");
+
+    setInterval(() => {
+      index = (index + 1) % images.length;
+      imgElement.src = images[index];
+    }, 4000); // Change every 4 seconds
+  </script>
+  <!-- Programs Section -->
+  <section id="programs" class="py-16 bg-gray-50 border-t">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-10">Programs</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">Medical Camp</h3>
+          <p class="text-gray-600 mt-2">Eye-Test medical camps collaborating with Ahalia Group of Eye Hospital.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">Sports & Arts Activities</h3>
+          <p class="text-gray-600 mt-2">Tournaments and cultural events to build discipline and health.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">Career Guidance & Support</h3>
+          <p class="text-gray-600 mt-2">Felicitation ceremony and Career guidance for students.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Section -->
+  <section id="impact" class="py-16 bg-white border-t text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-10">Our Impact</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-50 rounded-xl shadow p-6">
+          <div class="text-4xl font-extrabold text-blue-800">150+</div>
+          <p class="mt-2 text-gray-600">Active Members</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl shadow p-6">
+          <div class="text-4xl font-extrabold text-blue-800">12+</div>
+          <p class="mt-2 text-gray-600">Events</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl shadow p-6">
+          <div class="text-4xl font-extrabold text-blue-800">20+</div>
+          <p class="mt-2 text-gray-600">Community Drives</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="py-16 bg-gray-50 border-t">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center mb-10">
+        <h2 class="text-3xl font-bold">Upcoming Events</h2>
+        <a href="https://chat.whatsapp.com/CgYvZYO9jAQDEcaXL65UPO" class="bg-gray-900 text-white px-5 py-2 rounded-full flex items-center gap-2 hover:bg-black">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2h-1V3a1 1 0 00-1-1H6z"/><path d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9z"/></svg>
+          Get Reminders on WhatsApp
+        </a>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-center mb-3">
+            <h3 class="font-semibold text-lg">Onam Celebration</h3>
+            <span class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full">Sep 6</span>
+          </div>
+          <p class="text-gray-600">Onam cultural programs and events.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-center mb-3">
+            <h3 class="font-semibold text-lg">Keralotsavam 2025</h3>
+            <span class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full">Dec 1</span>
+          </div>
+          <p class="text-gray-600">Panchayat level Keralotsavam Arts & Sports program.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+          <div class="flex justify-between items-center mb-3">
+            <h3 class="font-semibold text-lg">Christmas Celebration</h3>
+            <span class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full">Dec 25</span>
+          </div>
+          <p class="text-gray-600">Christmas celebration and Carol Program.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-white border-t">
+<div class="max-w-7xl mx-auto px-4">
+<h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+<p class="mb-4">Reach out for memberships, volunteering, or partnerships.</p>
+<ul class="space-y-2">
+  <li>📍 Ambalavattom, Panamanna, Ottapalam, Kerala 679501</li>
+  <li>📧 yuvamitraambalavattom@gmail.com</li>
+  <li>📱 WhatsApp: +91 8129591498, +91 9048797914, +91 9061271392</li>
+</ul>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-100 py-6 text-center text-gray-600 text-sm">
+© 2023 Yuvamitra, Panamanna. All rights reserved.
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://chat.whatsapp.com/CgYvZYO9jAQDEcaXL65UPO?text=Hello%20Yuvamitra%2C%20I%20would%20like%20to%20know%20more." class="floating-whatsapp" target="_blank" rel="noreferrer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 .6C7.5.6.5 7.6.5 16c0 2.8.8 5.5 2.2 7.8L.6 31.4l7.8-2.1c2.3 1.4 5 2.2 7.8 2.2 8.4 0 15.4-7 15.4-15.4C31.4 7.6 24.4.6 16 .6zm8.8 22.1c-.4 1.2-2.2 2.1-3.1 2.2-.8.1-1.8.2-2.9-.2-.7-.2-1.6-.5-2.7-1.1-4.8-2.7-7.9-6.5-8.1-8.9-.1-2.4 1.3-3.6 1.8-4 .5-.4 1.1-.5 1.5-.5h1c.3 0 .8-.1 1.2.9.4 1 .9 2.4 1 2.5.1.2.1.4 0 .6-.1.2-.2.4-.3.5-.1.1-.2.3-.4.5-.1.2-.3.4-.1.8.1.4.6 1.3 1.3 2 .9 1 1.7 1.3 2 .1.3-.1.5-.1.7-.1s.5.1.8.6c.3.5 1.1 1.8 1.3 2.1.1.3.1.6 0 .8z"/></svg>
+</a>
+</body>
+</html>
